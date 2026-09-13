@@ -38,8 +38,10 @@ All the supported releases are here:
 
 | Release | i386 (x86 32-bit) |
 |---------|---------|
+| 0.4.16 | ✅ (tar) |
 | 0.4.15 | ✅ (tar) |
 
+<!-- url-template: VM_ISO_LINK = https://github.com/reactos/reactos/releases/download/{V}-release/ReactOS-{V}-i386.zip -->
 <!-- arch-label: i386 = i386 (x86 32-bit) -->
 
 > **Note:** ReactOS support is a **tech preview**. Remote command execution
@@ -138,7 +140,7 @@ jobs:
 ```
 
 
-The latest major version is: `v1`, which is the most recommended to use. (You can also use the latest full version: `v1.0.3`)  
+The latest major version is: `v1`, which is the most recommended to use. (You can also use the latest full version: `v1.0.4`)  
 
 
 If you are migrating from the previous `v0`, please change the `runs-on: ` to `runs-on: ubuntu-latest`
@@ -246,6 +248,7 @@ The default memory of the VM is 6144MB, you can use `mem` option to set the memo
 ```
 
 
+
 The VM is using all the cpu cores of the host by default, you can use `cpu` option to change the cpu cores:
 
 ```yaml
@@ -262,7 +265,7 @@ The VM is using all the cpu cores of the host by default, you can use `cpu` opti
 
 ## 5. Select release
 
-It uses [the ReactOS 0.4.15](conf/default.release.conf) by default, you can use `release` option to use another version of ReactOS:
+It uses [the ReactOS 0.4.16](conf/default.release.conf) by default, you can use `release` option to use another version of ReactOS:
 
 ```yaml
 ...
