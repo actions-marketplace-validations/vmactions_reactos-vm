@@ -105,22 +105,6 @@ jobs:
             arch: loongarch64
           - release: "0.4.16"
             arch: armv7
-          - release: ""
-            arch: aarch64
-          - release: ""
-            arch: riscv64
-          - release: ""
-            arch: powerpc64
-          - release: ""
-            arch: sparc64
-          - release: ""
-            arch: ppc64le
-          - release: ""
-            arch: s390x
-          - release: ""
-            arch: loongarch64
-          - release: ""
-            arch: armv7
           - release: "0.4.15"
             arch: ""
           - release: "0.4.15"
@@ -128,10 +112,6 @@ jobs:
           - release: "0.4.16"
             arch: ""
           - release: "0.4.16"
-            arch: "i386"
-          - release: ""
-            arch: ""
-          - release: ""
             arch: "i386"
 
 
@@ -155,7 +135,7 @@ jobs:
     - name: Test in ReactOS
       if: ${{ contains(fromJSON('{"x86_64":[],"aarch64":[],"riscv64":[],"powerpc64":[],"sparc64":[],"ppc64le":[],"s390x":[],"i386":["tar"],"loongarch64":[],"armv7":[]}')[matrix.arch == '' && 'x86_64' || matrix.arch], 'sshfs') }}
       id: test
-      uses: vmactions/reactos-vm@7bf5050873d6d289c05d720376f9afc2267f6045
+      uses: vmactions/reactos-vm@96efc5cd80699f6c9edef791fe175bc92ebf6e82
       with:
         envs: 'DEBUG MYTOKEN MYTOKEN2'
         prepare: |
@@ -299,22 +279,6 @@ jobs:
             arch: loongarch64
           - release: "0.4.16"
             arch: armv7
-          - release: ""
-            arch: aarch64
-          - release: ""
-            arch: riscv64
-          - release: ""
-            arch: powerpc64
-          - release: ""
-            arch: sparc64
-          - release: ""
-            arch: ppc64le
-          - release: ""
-            arch: s390x
-          - release: ""
-            arch: loongarch64
-          - release: ""
-            arch: armv7
           - release: "0.4.15"
             arch: ""
           - release: "0.4.15"
@@ -322,10 +286,6 @@ jobs:
           - release: "0.4.16"
             arch: ""
           - release: "0.4.16"
-            arch: "i386"
-          - release: ""
-            arch: ""
-          - release: ""
             arch: "i386"
 
 
@@ -341,7 +301,7 @@ jobs:
     - name: Test in ReactOS
       if: ${{ contains(fromJSON('{"x86_64":[],"aarch64":[],"riscv64":[],"powerpc64":[],"sparc64":[],"ppc64le":[],"s390x":[],"i386":["tar"],"loongarch64":[],"armv7":[]}')[matrix.arch == '' && 'x86_64' || matrix.arch], 'nfs') }}
       id: test
-      uses: vmactions/reactos-vm@7bf5050873d6d289c05d720376f9afc2267f6045
+      uses: vmactions/reactos-vm@96efc5cd80699f6c9edef791fe175bc92ebf6e82
       with:
         envs: 'DEBUG MYTOKEN MYTOKEN2'
         prepare: |
@@ -486,22 +446,6 @@ jobs:
             arch: loongarch64
           - release: "0.4.16"
             arch: armv7
-          - release: ""
-            arch: aarch64
-          - release: ""
-            arch: riscv64
-          - release: ""
-            arch: powerpc64
-          - release: ""
-            arch: sparc64
-          - release: ""
-            arch: ppc64le
-          - release: ""
-            arch: s390x
-          - release: ""
-            arch: loongarch64
-          - release: ""
-            arch: armv7
           - release: "0.4.15"
             arch: ""
           - release: "0.4.15"
@@ -509,10 +453,6 @@ jobs:
           - release: "0.4.16"
             arch: ""
           - release: "0.4.16"
-            arch: "i386"
-          - release: ""
-            arch: ""
-          - release: ""
             arch: "i386"
 
 
@@ -535,7 +475,7 @@ jobs:
     - name: Test in ReactOS
       if: ${{ contains(fromJSON('{"x86_64":[],"aarch64":[],"riscv64":[],"powerpc64":[],"sparc64":[],"ppc64le":[],"s390x":[],"i386":["tar"],"loongarch64":[],"armv7":[]}')[matrix.arch == '' && 'x86_64' || matrix.arch], 'scp') }}
       id: test
-      uses: vmactions/reactos-vm@7bf5050873d6d289c05d720376f9afc2267f6045
+      uses: vmactions/reactos-vm@96efc5cd80699f6c9edef791fe175bc92ebf6e82
       with:
         envs: 'DEBUG MYTOKEN MYTOKEN2'
         prepare: |
@@ -662,7 +602,7 @@ jobs:
     - name: Test in ReactOS
       if: ${{ contains('{"x86_64":[],"aarch64":[],"riscv64":[],"powerpc64":[],"sparc64":[],"ppc64le":[],"s390x":[],"i386":["tar"],"loongarch64":[],"armv7":[]}', 'tar') }}
       id: test
-      uses: vmactions/reactos-vm@7bf5050873d6d289c05d720376f9afc2267f6045
+      uses: vmactions/reactos-vm@96efc5cd80699f6c9edef791fe175bc92ebf6e82
       with:
         mem: 4096
         debug: true
@@ -732,7 +672,7 @@ jobs:
     - name: Test in ReactOS
       if: ${{ contains('{"x86_64":[],"aarch64":[],"riscv64":[],"powerpc64":[],"sparc64":[],"ppc64le":[],"s390x":[],"i386":["tar"],"loongarch64":[],"armv7":[]}', '9p') }}
       id: test
-      uses: vmactions/reactos-vm@7bf5050873d6d289c05d720376f9afc2267f6045
+      uses: vmactions/reactos-vm@96efc5cd80699f6c9edef791fe175bc92ebf6e82
       with:
         mem: 4096
         debug: true
@@ -838,22 +778,6 @@ jobs:
             arch: loongarch64
           - release: "0.4.16"
             arch: armv7
-          - release: ""
-            arch: aarch64
-          - release: ""
-            arch: riscv64
-          - release: ""
-            arch: powerpc64
-          - release: ""
-            arch: sparc64
-          - release: ""
-            arch: ppc64le
-          - release: ""
-            arch: s390x
-          - release: ""
-            arch: loongarch64
-          - release: ""
-            arch: armv7
           - release: "0.4.15"
             arch: ""
           - release: "0.4.15"
@@ -861,10 +785,6 @@ jobs:
           - release: "0.4.16"
             arch: ""
           - release: "0.4.16"
-            arch: "i386"
-          - release: ""
-            arch: ""
-          - release: ""
             arch: "i386"
 
 
@@ -880,7 +800,7 @@ jobs:
     - name: Test in ReactOS
       if: ${{ contains(fromJSON('{"x86_64":[],"aarch64":[],"riscv64":[],"powerpc64":[],"sparc64":[],"ppc64le":[],"s390x":[],"i386":["tar"],"loongarch64":[],"armv7":[]}')[matrix.arch == '' && 'x86_64' || matrix.arch], 'rsync') }}
       id: test
-      uses: vmactions/reactos-vm@7bf5050873d6d289c05d720376f9afc2267f6045
+      uses: vmactions/reactos-vm@96efc5cd80699f6c9edef791fe175bc92ebf6e82
       with:
         envs: 'MYTOKEN MYTOKEN2'
         prepare: |
@@ -965,7 +885,7 @@ jobs:
     - name: Test in ReactOS
       if: ${{ contains(fromJSON('{"x86_64":[],"aarch64":[],"riscv64":[],"powerpc64":[],"sparc64":[],"ppc64le":[],"s390x":[],"i386":["tar"],"loongarch64":[],"armv7":[]}')['x86_64'], 'rsync') }}
       id: test
-      uses: vmactions/reactos-vm@7bf5050873d6d289c05d720376f9afc2267f6045
+      uses: vmactions/reactos-vm@96efc5cd80699f6c9edef791fe175bc92ebf6e82
       with:
         prepare: |
           ver
@@ -1060,7 +980,7 @@ jobs:
         sparse-checkout-cone-mode: true
     - name: Test in ReactOS
       id: test
-      uses: vmactions/reactos-vm@7bf5050873d6d289c05d720376f9afc2267f6045
+      uses: vmactions/reactos-vm@96efc5cd80699f6c9edef791fe175bc92ebf6e82
       with:
         arch: ${{ matrix.arch }}
         debug: true
@@ -1108,7 +1028,7 @@ jobs:
     - name: Test in ReactOS
       if: ${{ contains(fromJSON('{"x86_64":[],"aarch64":[],"riscv64":[],"powerpc64":[],"sparc64":[],"ppc64le":[],"s390x":[],"i386":["tar"],"loongarch64":[],"armv7":[]}')['x86_64'], 'rsync') }}
       id: test
-      uses: vmactions/reactos-vm@7bf5050873d6d289c05d720376f9afc2267f6045
+      uses: vmactions/reactos-vm@96efc5cd80699f6c9edef791fe175bc92ebf6e82
       with:
         envs: 'MYTOKEN MYTOKEN2'
         prepare: |
@@ -1219,7 +1139,7 @@ jobs:
     - name: Test in ReactOS
       if: ${{ contains(fromJSON('{"x86_64":[],"aarch64":[],"riscv64":[],"powerpc64":[],"sparc64":[],"ppc64le":[],"s390x":[],"i386":["tar"],"loongarch64":[],"armv7":[]}')['x86_64'], 'rsync') }}
       id: test
-      uses: vmactions/reactos-vm@7bf5050873d6d289c05d720376f9afc2267f6045
+      uses: vmactions/reactos-vm@96efc5cd80699f6c9edef791fe175bc92ebf6e82
       with:
         mem: 4096
         debug: true
@@ -1276,7 +1196,7 @@ jobs:
     - name: Test in ReactOS
       if: ${{ contains(fromJSON('{"x86_64":[],"aarch64":[],"riscv64":[],"powerpc64":[],"sparc64":[],"ppc64le":[],"s390x":[],"i386":["tar"],"loongarch64":[],"armv7":[]}')['x86_64'], 'rsync') }}
       id: test
-      uses: vmactions/reactos-vm@7bf5050873d6d289c05d720376f9afc2267f6045
+      uses: vmactions/reactos-vm@96efc5cd80699f6c9edef791fe175bc92ebf6e82
       with:
         mem: 4096
         debug: true
@@ -1351,7 +1271,7 @@ jobs:
     - name: Test in ReactOS
       if: ${{ contains(fromJSON('{"x86_64":[],"aarch64":[],"riscv64":[],"powerpc64":[],"sparc64":[],"ppc64le":[],"s390x":[],"i386":["tar"],"loongarch64":[],"armv7":[]}')['x86_64'], 'rsync') }}
       id: test
-      uses: vmactions/reactos-vm@7bf5050873d6d289c05d720376f9afc2267f6045
+      uses: vmactions/reactos-vm@96efc5cd80699f6c9edef791fe175bc92ebf6e82
       with:
         mem: 4096
         debug: true
@@ -1407,7 +1327,7 @@ jobs:
     - name: Test in ReactOS
       if: ${{ contains(fromJSON('{"x86_64":[],"aarch64":[],"riscv64":[],"powerpc64":[],"sparc64":[],"ppc64le":[],"s390x":[],"i386":["tar"],"loongarch64":[],"armv7":[]}')['x86_64'], 'rsync') }}
       id: test
-      uses: vmactions/reactos-vm@7bf5050873d6d289c05d720376f9afc2267f6045
+      uses: vmactions/reactos-vm@96efc5cd80699f6c9edef791fe175bc92ebf6e82
       with:
         mem: 4096
         debug: true
@@ -1476,7 +1396,7 @@ jobs:
     - name: Test in ReactOS
       id: testerr
       continue-on-error: true
-      uses: vmactions/reactos-vm@7bf5050873d6d289c05d720376f9afc2267f6045
+      uses: vmactions/reactos-vm@96efc5cd80699f6c9edef791fe175bc92ebf6e82
       with:
         debug: true
         # A command that EXISTS and fails, rather than `false` or a made-up
@@ -1522,7 +1442,7 @@ jobs:
     - name: Test in ReactOS
       id: testpass
       continue-on-error: true
-      uses: vmactions/reactos-vm@7bf5050873d6d289c05d720376f9afc2267f6045
+      uses: vmactions/reactos-vm@96efc5cd80699f6c9edef791fe175bc92ebf6e82
       with:
         debug: true
         # No `true` and no double quotes: this body runs on every guest, and
